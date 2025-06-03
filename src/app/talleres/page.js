@@ -45,7 +45,8 @@ const talleresData = [
     nombre: "Mini Chefs Creativos",
     descripcionCorta: "Cocinamos recetas fáciles, nutritivas y llenas de color.",
     edades: "6 a 12 años",
-    horarios: [ // Si solo tiene un horario, sigue siendo un array con un elemento
+    horarios: [ // Si solo tiene un horario, sigue siendo un array con un 
+      
       "Miercoles: 18:15 a 19:45hs"
     ],
     imagen: "/images/talleres/cocina.jpg",
@@ -62,6 +63,46 @@ const talleresData = [
     ],
     imagen: "/images/talleres/dibujo-pintura.jpg",
     beneficios: ["Estimula la creatividad y la imaginación", "Desarrolla la motricidad fina y la coordinación", "Fomenta la expresión emocional a través del arte", "Mejora la concentración y la paciencia", "Promueve la confianza y el sentido de logro"]
+  },
+  {
+    id: 5,
+    nombre: "Ceramica",
+    descripcionCorta: "Un espacio para crear, jugar y dar forma a la imaginación con las manos.",
+    edades: "6 a 12 años",
+    horarios: [ // Puede tener un texto más general o múltiples líneas
+      "Lunes: 18:30 a 20:00 hs",
+      "Martes: 16:00 a 17:30 hs / 18:30 a 20:00 hs",
+      "Jueves: 18:30 a 20:00 hs"
+    ],
+    imagen: "/images/talleres/ceramica.jpg",
+    beneficios: ["Estimula la creatividad", "Mejora la motricidad fina", "Fomenta la concentración", "Refuerza la autoestima", "Promueve la expresión emocional"]
+  },
+  {
+    id: 6,
+    nombre: "Arcillaventura",
+    descripcionCorta: "Arcillaventura combina cerámica y ecoarte en un espacio creativo",
+    edades: "6 a 12 años",
+    horarios: [ // Puede tener un texto más general o múltiples líneas
+      "Miercoles: 18:15 a 19:45 hs",
+      "45 Minutos de Ceramica",
+      "45 Minutos Ecoarte"
+    ],
+    imagen: "/images/talleres/arcillaventura.jpg",
+    beneficios: ["Fomenta la creatividad y el uso consciente de materiales a través del arte.", "Desarrolla la motricidad fina mediante el trabajo manual con arcilla y materiales diversos", "Incentiva la reutilización creativa de materiales cotidianos", "Estimula la imaginación a través de propuestas artísticas libres y guiada"]
+  },
+  {
+    id: 7,
+    nombre: "Sabado de Aventura",
+    descripcionCorta: "Este taller combina cocina, huerta y juegos de laboratorio para que los niños aprendan haciendo",
+    edades: "6 a 12 años",
+    horarios: [ // Puede tener un texto más general o múltiples líneas
+      "Sabado: 10:00 a 13:00 hs",
+      "1 Hora de Cocina",
+      "1 Hora de Juegos de Laboratorio",
+      "1 Hora de Huerta"
+    ],
+    imagen: "/images/talleres/sabado-aventura.jpg",
+    beneficios: [" Cultivan, experimentan y cocinan mientras desarrollan la creatividad y el trabajo en equipo"]
   },
   // ... más talleres
 ];
