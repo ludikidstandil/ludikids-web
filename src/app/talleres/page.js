@@ -6,13 +6,67 @@ import WorkshopCard from '@/components/WorkshopCard';
 import { FiFilter, FiX } from 'react-icons/fi'; // Iconos para el botón de filtro
 
 // ... (talleresData y categoriasEdad como estaban o ajustados)
+// src/app/talleres/page.js
+
 const talleresData = [
-  // ... tus datos de talleres ...
-  { id: 1, nombre: "Pequeños Artistas", edades: "3 a 5 años", imagen: "/images/talleres/artistas.jpg", /* ... */ },
-  { id: 2, nombre: "Aventuras Científicas", edades: "6 a 8 años", imagen: "/images/talleres/ciencia.jpg", /* ... */ },
-  { id: 3, nombre: "Mini Chefs", edades: "4 a 7 años", imagen: "/images/talleres/cocina.jpg", /* ... */ },
-  { id: 4, nombre: "Exploradores Naturaleza", edades: "9 a 12 años", imagen: "/images/talleres/naturaleza.jpg", /* ... */ },
+  {
+    id: 1,
+    nombre: "Taller Ludico",
+    descripcionCorta: "Un espacio pensado para acompañar el desarrollo integral de los más pequeños a través de experiencias dinámicas y creativas.",
+    edades: "3 a 5 años",
+    horarios: [ // AHORA ES UN ARRAY
+      "Lunes: 9:30 a 11:30 hs / 14:00 a 16:00hs / 18:15 a 19:45hs ",
+      "Martes: 9:30 a 11:30 hs / 14:00 a 16:00hs / 18:15 a 19:45hs ",
+      "Miercoles: 9:30 a 11:30 hs / 14:00 a 16:00hs / 18:15 a 19:45hs ",
+      "Jueves: 9:30 a 11:30 hs / 14:00 a 16:00hs / 18:15 a 19:45hs ",
+      "Viernes: 9:30 a 11:30 hs / 14:00 a 16:00hs / 18:15 a 19:45hs ",
+    ],
+    imagen: "/images/talleres/taller-ludico.jpg",
+    beneficios: ["Música: estimula el ritmo y la creatividad", "Dibujo y pintura: fomenta la expresión artística", "Juego simbólico: potencia la imaginación y el desarrollo social", "Baile: promueve el movimiento y la coordinación", "Juegos reglados: fortalecen la atención, la paciencia y el trabajo en equipo"]
+  },
+  {
+    id: 2,
+    nombre: "Rincon del Juego",
+    descripcionCorta: "Taller ludico por Hora.",
+    edades: "3 a 12 años",
+    horarios: [
+      "Lunes: 9:30 a 11:30hs / 14:00 a 16:00hs / 18:15 a 19:45hs ",
+      "Martes: 9:30 a 11:30hs / 14:00 a 16:00hs / 18:15 a 19:45hs ",
+      "Miercoles: 9:30 a 11:30hs / 14:00 a 16:00hs / 18:15 a 19:45hs ",
+      "Jueves: 9:30 a 11:30hs / 14:00 a 16:00hs / 18:15 a 19:45hs ",
+      "Viernes: 9:30 a 11:30hs / 14:00 a 16:00hs / 18:15 a 19:45hs ",
+      // Puedes añadir más si este taller tiene múltiples horarios
+    ],
+    imagen: "/images/talleres/rincon-juego.jpg",
+    beneficios: ["Música: estimula el ritmo y la creatividad", "Dibujo y pintura: fomenta la expresión artística", "Juego simbólico: potencia la imaginación y el desarrollo social", "Baile: promueve el movimiento y la coordinación", "Juegos reglados: fortalecen la atención, la paciencia y el trabajo en equipo"]
+  },
+  {
+    id: 3,
+    nombre: "Mini Chefs Creativos",
+    descripcionCorta: "Cocinamos recetas fáciles, nutritivas y llenas de color.",
+    edades: "6 a 12 años",
+    horarios: [ // Si solo tiene un horario, sigue siendo un array con un elemento
+      "Miercoles: 18:15 a 19:45hs"
+    ],
+    imagen: "/images/talleres/cocina.jpg",
+    beneficios: ["Fortalece la autonomía y la confianza", "Desarrolla la motricidad y la coordinación", "Incentiva hábitos alimenticios saludables", "Promueve el trabajo en equipo", "Estimula la concentración y el pensamiento lógico"]
+  },
+  {
+    id: 4,
+    nombre: "Dibujo y Pintura",
+    descripcionCorta: "Exploran el arte, juegan con colores y desarrollan creatividad, concentración y confianza.",
+    edades: "6 a 12 años",
+    horarios: [ // Puede tener un texto más general o múltiples líneas
+      "Lunes: 18:15 a 19:45 hs",
+      "Miercoles: 18:15 a 19:45 hs"
+    ],
+    imagen: "/images/talleres/dibujo-pintura.jpg",
+    beneficios: ["Estimula la creatividad y la imaginación", "Desarrolla la motricidad fina y la coordinación", "Fomenta la expresión emocional a través del arte", "Mejora la concentración y la paciencia", "Promueve la confianza y el sentido de logro"]
+  },
+  // ... más talleres
 ];
+
+// ... el resto de tu src/app/talleres/page.js como estaba ...
 
 const categoriasEdad = [
   "Todos",

@@ -1,6 +1,6 @@
 // src/components/WorkshopCard.js
 import Image from 'next/image';
-import Link from 'next/link'; // Opcional, si quieres un botón que lleve a otra página
+import { FaWhatsapp, FaRegClock, FaUsers, FaStar, FaCalendarAlt } from 'react-icons/fa';
 
 export default function WorkshopCard({ taller }) {
   const numeroWhatsApp = "5492494648966";
@@ -8,43 +8,71 @@ export default function WorkshopCard({ taller }) {
   const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensajeWhatsApp)}`;
 
   return (
-    <div className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col hover:shadow-2xl transition-shadow duration-300 h-full">
+    <div className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col group hover:shadow-2xl transition-all duration-300 ease-in-out h-full">
       {taller.imagen && (
-        <div className="relative w-full h-48 sm:h-56"> {/* Altura fija para la imagen */}
+        <div className="relative w-full h-48 sm:h-52 overflow-hidden">
           <Image
             src={taller.imagen}
             alt={`Imagen del taller ${taller.nombre}`}
-            fill // 'fill' hace que la imagen llene el contenedor padre (necesita position:relative en el padre)
-            style={{ objectFit: 'cover' }} // similar a bg-cover, o usa 'contain' si prefieres
-            sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw" // Ayuda a Next/Image a elegir el mejor tamaño
+            fill
+            style={{ objectFit: 'cover' }}
+            className="group-hover:scale-105 transition-transform duration-300 ease-in-out"
+            sizes="(max-width: 640px) 100vw, (max-width: 1023px) 50vw, 33vw"
           />
         </div>
       )}
-      <div className="p-6 flex flex-col flex-grow">
-        <h3 className="text-xl lg:text-2xl font-bold font-titulo text-ludikids-turquesa mb-2">
+      
+      <div className="p-5 sm:p-6 flex flex-col flex-grow">
+        <h3 className="text-lg sm:text-xl font-bold font-titulo text-ludikids-turquesa mb-3 group-hover:text-teal-700 transition-colors">
           {taller.nombre}
         </h3>
-        <p className="text-sm text-gray-600 mb-1"><span className="font-semibold">Edades:</span> {taller.edades}</p>
-        <p className="text-sm text-gray-600 mb-3"><span className="font-semibold">Horarios:</span> {taller.horarios}</p>
+        
+        <div className="space-y-2 mb-3 text-xs sm:text-sm text-gray-600">
+          <div className="flex items-center">
+            <FaUsers className="w-4 h-4 mr-2 text-ludikids-amarillo flex-shrink-0" />
+            <span><span className="font-medium text-gray-700">Edades:</span> {taller.edades}</span>
+          </div>
+          
+          {taller.horarios && taller.horarios.length > 0 && (
+            <div className="flex items-start">
+              <FaCalendarAlt className="w-4 h-4 mr-2 mt-0.5 text-ludikids-amarillo flex-shrink-0" />
+              <div>
+                <span className="font-medium text-gray-700 block mb-0.5">Días y Horarios:</span>
+                {taller.horarios.map((horario, index) => (
+                  <p key={index} className="text-gray-600 leading-snug">
+                    {horario}
+                  </p>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+
         <p className="text-gray-700 text-sm leading-relaxed mb-4 flex-grow">
           {taller.descripcionCorta}
         </p>
+
         {taller.beneficios && taller.beneficios.length > 0 && (
-          <div className="mb-4">
-            <p className="text-sm font-semibold text-gray-800 mb-1">Beneficios:</p>
-            <ul className="list-disc list-inside text-xs text-gray-600 space-y-1">
-              {taller.beneficios.map((beneficio, index) => (
-                <li key={index}>{beneficio}</li>
+          <div className="mb-5">
+            <h4 className="text-xs font-semibold text-gray-700 uppercase tracking-wider mb-1.5">Beneficios Clave:</h4> {/* Título para beneficios */}
+            <ul className="space-y-1">
+              {/* CAMBIO AQUÍ para mostrar hasta 5 beneficios */}
+              {taller.beneficios.slice(0, 5).map((beneficio, index) => (
+                <li key={index} className="flex items-start text-xs text-gray-600">
+                  <FaStar className="w-3 h-3 text-yellow-400 mr-2 mt-0.5 flex-shrink-0" />
+                  <span>{beneficio}</span>
+                </li>
               ))}
             </ul>
           </div>
         )}
-        <div className="mt-auto pt-4 border-t border-gray-200"> {/* mt-auto empuja esto al final si la tarjeta tiene altura variable */}
+        
+        <div className="mt-auto pt-4">
           <a
             href={urlWhatsApp}
             target="_blank"
             rel="noopener noreferrer"
-            className="block w-full text-center bg-ludikids-amarillo text-zinc-800 font-semibold font-titulo py-2 px-4 rounded-md hover:bg-yellow-400 transition-colors duration-200"
+            className="block w-full text-center bg-ludikids-amarillo text-zinc-800 font-semibold font-titulo py-2.5 px-4 rounded-lg hover:bg-yellow-400 transition-all duration-300 ease-in-out transform hover:scale-105 text-sm sm:text-base"
           >
             Consultar por WhatsApp
           </a>
