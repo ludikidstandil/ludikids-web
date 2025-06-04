@@ -40,6 +40,15 @@ const proyectosData = [
     categoria: "Proyectos Comunitarios"
   },
   // ... añade más proyectos aquí
+    {
+    id: 5, // Nuevo ID
+    slug: "consultorio-psicopedagogico",
+    titulo: "Consultorio Psicopedagógico",
+    descripcionCorta: "Acompañamiento individualizado para potenciar el aprendizaje y superar dificultades en niños y adolescentes.",
+    // imagen: "/images/proyectos/consultorio.jpg", // Opcional, si tienes imagen para la tarjeta
+    categoria: "Apoyo Psicopedagógico",
+    // descripcionExtensa la necesitarás para la página de detalle
+  },
 ];
 
 

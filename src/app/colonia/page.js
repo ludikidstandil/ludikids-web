@@ -8,7 +8,7 @@ const coloniasData = [
     id: "verano2025",
     nombre: "Colonia de Verano Ludikids ☀️",
     temporada: "Enero y Febrero 2025",
-    edades: "4 a 10 años",
+    edades: "3 a 12 años",
     descripcion: "¡Nuestra clásica Colonia de Verano llega recargada de diversión! Dos meses llenos de juegos al aire libre, actividades acuáticas refrescantes (adaptadas y seguras), talleres de arte temáticos, jornadas de cocina, exploración de la naturaleza, música, baile y muchísimas sorpresas. Un espacio para hacer nuevos amigos, disfrutar del receso escolar y seguir aprendiendo mientras juegan. Contamos con grupos reducidos por edad y profesionales especializados para garantizar una experiencia inolvidable y segura.",
     imagen: "/images/colonias/verano.jpg",
     destacados: [
@@ -16,14 +16,14 @@ const coloniasData = [
       "Talleres de arte y manualidades temáticos",
       "Actividades acuáticas supervisadas",
       "Exploración y contacto con la naturaleza",
-      "Meriendas saludables incluidas"
+      "Meriendas y desayuno incluid0as"
     ]
   },
   {
     id: "invierno2024",
     nombre: "Colonia de Invierno Aventurera ❄️",
-    temporada: "Receso Invernal (Julio 2024)",
-    edades: "4 a 10 años",
+    temporada: "Receso Invernal (Julio 2025)",
+    edades: "3 a 12 años",
     descripcion: "¡El frío no nos detiene! En nuestra Colonia de Invierno, transformamos el receso en una aventura puertas adentro. Ofrecemos talleres especiales de ciencia divertida, creación de cuentos e ilustración, teatro de sombras, construcción con materiales reciclados y jornadas de juegos de ingenio. Un ambiente cálido y estimulante para que los chicos sigan creando, aprendiendo y socializando durante las vacaciones de invierno. ¡Cupos limitados!",
     imagen: "/images/colonias/invierno.jpg",
     destacados: [
@@ -31,7 +31,8 @@ const coloniasData = [
       "Creación literaria y artística",
       "Juegos de mesa y estrategia",
       "Actividades de expresión corporal",
-      "Ambiente climatizado y seguro"
+      "Ambiente climatizado y seguro",
+      "Meriendas y desayuno incluid0as"
     ]
   },
 ];
