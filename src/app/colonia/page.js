@@ -16,7 +16,7 @@ const coloniasData = [
       "Talleres de arte y manualidades temáticos",
       "Actividades acuáticas supervisadas",
       "Exploración y contacto con la naturaleza",
-      "Meriendas y desayuno incluid0as"
+      "Meriendas y desayuno incluidos"
     ]
   },
   {
@@ -32,7 +32,7 @@ const coloniasData = [
       "Juegos de mesa y estrategia",
       "Actividades de expresión corporal",
       "Ambiente climatizado y seguro",
-      "Meriendas y desayuno incluid0as"
+      "Meriendas y desayuno incluidos"
     ]
   },
 ];
