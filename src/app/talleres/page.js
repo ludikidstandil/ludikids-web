@@ -104,6 +104,21 @@ const talleresData = [
     imagen: "/images/talleres/sabado-aventura.jpg",
     beneficios: [" Cultivan, experimentan y cocinan mientras desarrollan la creatividad y el trabajo en equipo"]
   },
+  {
+    id: 8,
+    nombre: "Taller de Juegos MiniLudi",
+    descripcionCorta: "Taller especialmente diseñado para desarrollar habilidades sociales, emocionales y motoras",
+    edades: "3 a 5 años",
+    horarios: [ // Puede tener un texto más general o múltiples líneas
+      "Lunes: 9:30 a 11:30 hs / 14:00 a 16:00hs / 18:15 a 19:45hs ",
+      "Martes: 9:30 a 11:30 hs / 14:00 a 16:00hs / 18:15 a 19:45hs ",
+      "Miercoles: 9:30 a 11:30 hs / 14:00 a 16:00hs / 18:15 a 19:45hs ",
+      "Jueves: 9:30 a 11:30 hs / 14:00 a 16:00hs / 18:15 a 19:45hs ",
+      "Viernes: 9:30 a 11:30 hs / 14:00 a 16:00hs / 18:15 a 19:45hs ",
+    ],
+    imagen: "/images/talleres/miniludi.jpg",
+    beneficios: ["En MiniLudi, los más chiquitos (3 a 5 años) viven experiencias únicas a través del juego: movimiento, música, arte y muchas sonrisas."]
+  },
   // ... más talleres
 ];
 
