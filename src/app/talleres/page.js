@@ -13,7 +13,7 @@ const talleresData = [
     id: 1,
     nombre: "Taller Ludico",
     descripcionCorta: "Un espacio pensado para acompañar el desarrollo integral de los más pequeños a través de experiencias dinámicas y creativas.",
-    edades: "3 a 5 años",
+    edades: "6 a 12 años",
     horarios: [ // AHORA ES UN ARRAY
       "Lunes: 9:30 a 11:30 hs / 14:00 a 16:00hs / 18:15 a 19:45hs ",
       "Martes: 9:30 a 11:30 hs / 14:00 a 16:00hs / 18:15 a 19:45hs ",
