@@ -15,11 +15,7 @@ const talleresData = [
     descripcionCorta: "Un espacio pensado para acompañar el desarrollo integral de los más pequeños a través de experiencias dinámicas y creativas",
     edades: "6 a 12 años",
     horarios: [ // AHORA ES UN ARRAY
-      "Lunes: 9:30 a 11:30 hs / 14:00 a 16:00hs / 18:15 a 19:45hs ",
-      "Martes: 9:30 a 11:30 hs / 14:00 a 16:00hs / 18:15 a 19:45hs ",
-      "Miercoles: 9:30 a 11:30 hs / 14:00 a 16:00hs / 18:15 a 19:45hs ",
-      "Jueves: 9:30 a 11:30 hs / 14:00 a 16:00hs / 18:15 a 19:45hs ",
-      "Viernes: 9:30 a 11:30 hs / 14:00 a 16:00hs / 18:15 a 19:45hs ",
+      "Lunes a Viernes: 9:00 a 12:00hs / 14:00 a 17:00hs / 18:15 a 19:45hs"
     ],
     imagen: "/images/talleres/taller-ludico.jpg",
     beneficios: ["Música: estimula el ritmo y la creatividad.", "Dibujo y pintura: fomenta la expresión artística.", "Juego simbólico: potencia la imaginación y el desarrollo social.", "Baile: promueve el movimiento y la coordinación.", "Juegos reglados: fortalecen la atención, la paciencia y el trabajo en equipo."]
@@ -27,14 +23,10 @@ const talleresData = [
   {
     id: 2,
     nombre: "Rincon del Juego",
-    descripcionCorta: "Taller ludico por Hora",
+    descripcionCorta: "Taller por Hora",
     edades: "3 a 12 años",
     horarios: [
-      "Lunes: 9:30 a 11:30hs / 14:00 a 16:00hs / 18:15 a 19:45hs",
-      "Martes: 9:30 a 11:30hs / 14:00 a 16:00hs / 18:15 a 19:45hs",
-      "Miercoles: 9:30 a 11:30hs / 14:00 a 16:00hs / 18:15 a 19:45hs",
-      "Jueves: 9:30 a 11:30hs / 14:00 a 16:00hs / 18:15 a 19:45hs",
-      "Viernes: 9:30 a 11:30hs / 14:00 a 16:00hs / 18:15 a 19:45hs ",
+      "Lunes a viernes: 9:00 a 12:0hs / 14:00 a 17:00hs / 18:15 a 19:45hs"
       // Puedes añadir más si este taller tiene múltiples horarios
     ],
     imagen: "/images/talleres/rincon-juego.jpg",
