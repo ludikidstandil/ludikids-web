@@ -12,7 +12,7 @@ const talleresData = [
   {
     id: 1,
     nombre: "Taller Ludico",
-    descripcionCorta: "Un espacio pensado para acompañar el desarrollo integral de los más pequeños a través de experiencias dinámicas y creativas.",
+    descripcionCorta: "Un espacio pensado para acompañar el desarrollo integral de los más pequeños a través de experiencias dinámicas y creativas",
     edades: "6 a 12 años",
     horarios: [ // AHORA ES UN ARRAY
       "Lunes: 9:30 a 11:30 hs / 14:00 a 16:00hs / 18:15 a 19:45hs ",
@@ -22,35 +22,36 @@ const talleresData = [
       "Viernes: 9:30 a 11:30 hs / 14:00 a 16:00hs / 18:15 a 19:45hs ",
     ],
     imagen: "/images/talleres/taller-ludico.jpg",
-    beneficios: ["Música: estimula el ritmo y la creatividad", "Dibujo y pintura: fomenta la expresión artística", "Juego simbólico: potencia la imaginación y el desarrollo social", "Baile: promueve el movimiento y la coordinación", "Juegos reglados: fortalecen la atención, la paciencia y el trabajo en equipo"]
+    beneficios: ["Música: estimula el ritmo y la creatividad.", "Dibujo y pintura: fomenta la expresión artística.", "Juego simbólico: potencia la imaginación y el desarrollo social.", "Baile: promueve el movimiento y la coordinación.", "Juegos reglados: fortalecen la atención, la paciencia y el trabajo en equipo."]
   },
   {
     id: 2,
     nombre: "Rincon del Juego",
-    descripcionCorta: "Taller ludico por Hora.",
+    descripcionCorta: "Taller ludico por Hora",
     edades: "3 a 12 años",
     horarios: [
-      "Lunes: 9:30 a 11:30hs / 14:00 a 16:00hs / 18:15 a 19:45hs ",
-      "Martes: 9:30 a 11:30hs / 14:00 a 16:00hs / 18:15 a 19:45hs ",
-      "Miercoles: 9:30 a 11:30hs / 14:00 a 16:00hs / 18:15 a 19:45hs ",
-      "Jueves: 9:30 a 11:30hs / 14:00 a 16:00hs / 18:15 a 19:45hs ",
+      "Lunes: 9:30 a 11:30hs / 14:00 a 16:00hs / 18:15 a 19:45hs",
+      "Martes: 9:30 a 11:30hs / 14:00 a 16:00hs / 18:15 a 19:45hs",
+      "Miercoles: 9:30 a 11:30hs / 14:00 a 16:00hs / 18:15 a 19:45hs",
+      "Jueves: 9:30 a 11:30hs / 14:00 a 16:00hs / 18:15 a 19:45hs",
       "Viernes: 9:30 a 11:30hs / 14:00 a 16:00hs / 18:15 a 19:45hs ",
       // Puedes añadir más si este taller tiene múltiples horarios
     ],
     imagen: "/images/talleres/rincon-juego.jpg",
-    beneficios: ["Música: estimula el ritmo y la creatividad", "Dibujo y pintura: fomenta la expresión artística", "Juego simbólico: potencia la imaginación y el desarrollo social", "Baile: promueve el movimiento y la coordinación", "Juegos reglados: fortalecen la atención, la paciencia y el trabajo en equipo"]
+    beneficios: ["Música: estimula el ritmo y la creatividad.", "Dibujo y pintura: fomenta la expresión artística.", "Juego simbólico: potencia la imaginación y el desarrollo social.", "Baile: promueve el movimiento y la coordinación.", "Juegos reglados: fortalecen la atención, la paciencia y el trabajo en equipo."]
   },
   {
     id: 3,
-    nombre: "Mini Chefs Creativos",
-    descripcionCorta: "Cocinamos recetas fáciles, nutritivas y llenas de color.",
+    nombre: "Apoyo Escolar",
+    descripcionCorta: "Acompañamiento pedagógico personalizado para reforzar contenidos escolares, resolver dudas y afianzar hábitos de estudio.",
     edades: "6 a 12 años",
     horarios: [ // Si solo tiene un horario, sigue siendo un array con un 
-      
-      "Miercoles: 18:15 a 19:45hs"
+      "Lunes: 18:30 a 20:00hs",
+      "Miercoles: 18:30 a 20:00hs",
+      "Viernes: 18:30 a 20:00hs"
     ],
-    imagen: "/images/talleres/cocina.jpg",
-    beneficios: ["Fortalece la autonomía y la confianza", "Desarrolla la motricidad y la coordinación", "Incentiva hábitos alimenticios saludables", "Promueve el trabajo en equipo", "Estimula la concentración y el pensamiento lógico"]
+    imagen: "/images/talleres/apoyoescolar.jpg",
+    beneficios: ["Mejora la comprensión y el rendimiento académico.", "Desarrolla técnicas de estudio y autonomía.", "Aumenta la confianza para abordar tareas y exámenes.", "Ofrece atención personalizada en un ambiente tranquilo."]
   },
   {
     id: 4,
@@ -59,36 +60,37 @@ const talleresData = [
     edades: "6 a 12 años",
     horarios: [ // Puede tener un texto más general o múltiples líneas
       "Lunes: 18:15 a 19:45 hs",
-      "Miercoles: 18:15 a 19:45 hs"
+      "Miercoles: 18:15 a 19:45 hs",
+      "Viernes: 18:15 a 19:45 hs"
     ],
     imagen: "/images/talleres/dibujo-pintura.jpg",
-    beneficios: ["Estimula la creatividad y la imaginación", "Desarrolla la motricidad fina y la coordinación", "Fomenta la expresión emocional a través del arte", "Mejora la concentración y la paciencia", "Promueve la confianza y el sentido de logro"]
+    beneficios: ["Estimula la creatividad y la imaginación.", "Desarrolla la motricidad fina y la coordinación.", "Fomenta la expresión emocional a través del arte.", "Mejora la concentración y la paciencia.", "Promueve la confianza y el sentido de logro."]
   },
   {
     id: 5,
     nombre: "Ceramica",
-    descripcionCorta: "Un espacio para crear, jugar y dar forma a la imaginación con las manos.",
+    descripcionCorta: "Un espacio para crear, jugar y dar forma a la imaginación con las manos",
     edades: "6 a 12 años",
     horarios: [ // Puede tener un texto más general o múltiples líneas
-      "Lunes: 18:30 a 20:00 hs",
-      "Martes: 16:00 a 17:30 hs / 18:30 a 20:00 hs",
-      "Jueves: 18:30 a 20:00 hs"
+      "Martes: 18:15 a 19:45 hs",
+      "Miercoles: 18:30 a 20:00 hs",
+      "Jueves: 16:30 a 18:00 hs / 18:30 a 20:00 hs",
+      "Viernes: 18:30 a 20:00 hs"
     ],
     imagen: "/images/talleres/ceramica.jpg",
-    beneficios: ["Estimula la creatividad", "Mejora la motricidad fina", "Fomenta la concentración", "Refuerza la autoestima", "Promueve la expresión emocional"]
+    beneficios: ["Estimula la creatividad.", "Mejora la motricidad fina.", "Fomenta la concentración.", "Refuerza la autoestima.", "Promueve la expresión emocional."]
   },
   {
     id: 6,
-    nombre: "Arcillaventura",
-    descripcionCorta: "Arcillaventura combina cerámica y ecoarte en un espacio creativo",
-    edades: "6 a 12 años",
+    nombre: "Taller de bijouteri",
+    descripcionCorta: "Un espacio para crear accesorios únicos, combinar colores y materiales, y dejar volar la imaginación diseñando piezas de bijouterie.",
+    edades: "8 a 12 años",
     horarios: [ // Puede tener un texto más general o múltiples líneas
-      "Miercoles: 18:15 a 19:45 hs",
-      "45 Minutos de Ceramica",
-      "45 Minutos Ecoarte"
+      "Martes: 18:30 a 20:00hs",
+      "Jueves: 18:30 a 20:00hs"
     ],
-    imagen: "/images/talleres/arcillaventura.jpg",
-    beneficios: ["Fomenta la creatividad y el uso consciente de materiales a través del arte.", "Desarrolla la motricidad fina mediante el trabajo manual con arcilla y materiales diversos", "Incentiva la reutilización creativa de materiales cotidianos", "Estimula la imaginación a través de propuestas artísticas libres y guiada"]
+    imagen: "/images/talleres/bijouteri.jpg",
+    beneficios: ["Estimula la creatividad y la imaginación.", "Desarrolla la motricidad fina y la coordinación.", "Favorece la concentración y la paciencia.", "Promueve la expresión personal y la autonomía."]
   },
   {
     id: 7,
@@ -110,11 +112,11 @@ const talleresData = [
     descripcionCorta: "Taller especialmente diseñado para desarrollar habilidades sociales, emocionales y motoras",
     edades: "3 a 5 años",
     horarios: [ // Puede tener un texto más general o múltiples líneas
-      "Lunes: 9:30 a 11:30 hs / 14:00 a 16:00hs / 18:15 a 19:45hs ",
-      "Martes: 9:30 a 11:30 hs / 14:00 a 16:00hs / 18:15 a 19:45hs ",
-      "Miercoles: 9:30 a 11:30 hs / 14:00 a 16:00hs / 18:15 a 19:45hs ",
-      "Jueves: 9:30 a 11:30 hs / 14:00 a 16:00hs / 18:15 a 19:45hs ",
-      "Viernes: 9:30 a 11:30 hs / 14:00 a 16:00hs / 18:15 a 19:45hs ",
+      "Lunes: 9:00 a 12:00 hs / 18:15 a 19:45hs",
+      "Martes: 9:00 a 12:00 hs",
+      "Miercoles: 9:00 a 12:00 hs / 18:15 a 19:45hs",
+      "Jueves: 9:00 a 12:00 hs",
+      "Viernes: 9:00 a 11:00 hs / 18:15 a 19:45hs",
     ],
     imagen: "/images/talleres/miniludi.jpg",
     beneficios: ["En MiniLudi, los más chiquitos (3 a 5 años) viven experiencias únicas a través del juego: movimiento, música, arte y muchas sonrisas."]
