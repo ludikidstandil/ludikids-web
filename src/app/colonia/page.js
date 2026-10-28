@@ -5,9 +5,9 @@ import ColoniaCard from '@/components/ColoniaCard';
 // Pega aquí el array coloniasData que definimos en el Paso 1
 const coloniasData = [
   {
-    id: "verano2024",
+    id: "verano2025",
     nombre: "Colonia de Verano Ludikids ☀️",
-    temporada: "Enero y Febrero",
+    temporada: "Enero y Febrero 2027",
     edades: "3 a 12 años",
     descripcion: "¡Nuestra clásica Colonia de Verano llega recargada de diversión! Dos meses llenos de juegos al aire libre, actividades acuáticas refrescantes (adaptadas y seguras), talleres de arte temáticos, jornadas de cocina, exploración de la naturaleza, música, baile y muchísimas sorpresas. Un espacio para hacer nuevos amigos, disfrutar del receso escolar y seguir aprendiendo mientras juegan. Contamos con grupos reducidos por edad y profesionales especializados para garantizar una experiencia inolvidable y segura.",
     imagen: "/images/colonias/verano.jpg",
