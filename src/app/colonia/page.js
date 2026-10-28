@@ -5,7 +5,7 @@ import ColoniaCard from '@/components/ColoniaCard';
 // Pega aquí el array coloniasData que definimos en el Paso 1
 const coloniasData = [
   {
-    id: "verano2027",
+    id: "verano2024",
     nombre: "Colonia de Verano Ludikids ☀️",
     temporada: "Enero y Febrero",
     edades: "3 a 12 años",
@@ -20,7 +20,7 @@ const coloniasData = [
     ]
   },
   {
-    id: "invierno2027",
+    id: "invierno2024",
     nombre: "Colonia de Invierno Aventurera ❄️",
     temporada: "Receso Invernal (Julio 2027)",
     edades: "3 a 12 años",
