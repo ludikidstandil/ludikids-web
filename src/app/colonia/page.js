@@ -5,9 +5,9 @@ import ColoniaCard from '@/components/ColoniaCard';
 // Pega aquí el array coloniasData que definimos en el Paso 1
 const coloniasData = [
   {
-    id: "verano2025",
+    id: "verano2027",
     nombre: "Colonia de Verano Ludikids ☀️",
-    temporada: "Enero y Febrero 2025",
+    temporada: "Enero y Febrero",
     edades: "3 a 12 años",
     descripcion: "¡Nuestra clásica Colonia de Verano llega recargada de diversión! Dos meses llenos de juegos al aire libre, actividades acuáticas refrescantes (adaptadas y seguras), talleres de arte temáticos, jornadas de cocina, exploración de la naturaleza, música, baile y muchísimas sorpresas. Un espacio para hacer nuevos amigos, disfrutar del receso escolar y seguir aprendiendo mientras juegan. Contamos con grupos reducidos por edad y profesionales especializados para garantizar una experiencia inolvidable y segura.",
     imagen: "/images/colonias/verano.jpg",
@@ -20,9 +20,9 @@ const coloniasData = [
     ]
   },
   {
-    id: "invierno2024",
+    id: "invierno2027",
     nombre: "Colonia de Invierno Aventurera ❄️",
-    temporada: "Receso Invernal (Julio 2025)",
+    temporada: "Receso Invernal (Julio 2027)",
     edades: "3 a 12 años",
     descripcion: "¡El frío no nos detiene! En nuestra Colonia de Invierno, transformamos el receso en una aventura puertas adentro. Ofrecemos talleres especiales de ciencia divertida, creación de cuentos e ilustración, teatro de sombras, construcción con materiales reciclados y jornadas de juegos de ingenio. Un ambiente cálido y estimulante para que los chicos sigan creando, aprendiendo y socializando durante las vacaciones de invierno. ¡Cupos limitados!",
     imagen: "/images/colonias/invierno.jpg",
